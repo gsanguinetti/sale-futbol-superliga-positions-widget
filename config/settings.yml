@@ -1,0 +1,5 @@
+plugins:
+  sale-futbol-superliga-positions-widget:
+    type: text
+    default: ''
+    client: true
