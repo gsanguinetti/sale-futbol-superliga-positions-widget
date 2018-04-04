@@ -5,8 +5,5 @@
 # url: https://github.com/gsanguinetti/sale-futbol-superliga-positions-widget
 
 after_initialize do
-  SiteSetting.class_eval do
-    @choices[:layouts_sidebar_right_widgets].push('sale-futbol-superliga-positions-widget')
-    @choices[:layouts_sidebar_left_widgets].push('sale-futbol-superliga-positions-widget')
-  end
+ DiscourseLayouts::WidgetHelper.add_widget('sale-futbol-superliga-positions-widget')
 end
